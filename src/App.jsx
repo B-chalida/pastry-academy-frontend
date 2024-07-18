@@ -1,10 +1,9 @@
-// import AppRouter from "./Router";
-import LoginPage from "./pages/login/Login";
+import AppRouter from "./Router";
 
 function App() {
   return (
     <>
-      <LoginPage />
+      <AppRouter />
     </>
   );
 }
