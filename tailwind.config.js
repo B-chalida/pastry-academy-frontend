@@ -5,9 +5,12 @@ export default {
     extend: {
       fontFamily: {
         dancing: ['"Dancing Script"', "cursive"],
+        dancing_script: ['"Dancing Script"', "cursive"],
         cormorant: ['"Cormorant", "serif"'],
         noto_sand_thai: ['"Noto Sans Thai"', "sans-serif"],
         dosis: ['"Dosis"', "sans-serif"],
+        adamina: ['"Adamina"', "serif"],
+        plus_jakarta_sans: ['"Plus Jakarta Sans"', "sans-serif"],
       },
       colors: {
         "contentMain-mercury": "#eae9e9",
