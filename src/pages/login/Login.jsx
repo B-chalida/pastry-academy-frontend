@@ -1,11 +1,11 @@
 import React from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function LoginPage() {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -26,7 +26,7 @@ function LoginPage() {
         );
         alert("Welcome back! You have successfully logged in.");
         localStorage.setItem("token", response.data.token);
-        // navigate("/");
+        navigate("/");
       } catch (error) {
         alert("Incorrect email or password. Please try again.");
       }
@@ -59,7 +59,7 @@ function LoginPage() {
               USER LOGIN
             </h2>
             <button
-              //   onClick={() => navigate("/")}
+              onClick={() => navigate("/")}
               className="text-textMain-mirage hover:text-mirage  text-center mt-2"
             >
               Welcome to The Dough & Pastry Academy
@@ -133,7 +133,7 @@ function LoginPage() {
           </form>
           <div className="mt-6 text-center">
             <button
-              //   onClick={() => navigate("/register")}
+              onClick={() => navigate("/register")}
               className="text-sm text-textSecondary-riverbed hover:underline"
             >
               Create Account
