@@ -18,12 +18,12 @@ function NavBar() {
             </div>
             <button
               onClick={() => navigate("/")}
-              className="font-dancing text-3xl text-textMain-mirage"
+              className="font-dancing_script text-3xl text-textMain-mirage"
             >
               The Dough & Pastry Academy
             </button>
           </div>
-          <div className="font-cormorant text-xl flex items-center">
+          <div className="font-adamina text-textSecondary-riverbed text-lg flex items-center">
             <button
               onClick={() => navigate("/")}
               className="mr-6 hover:text-textMain-mirage"
@@ -49,7 +49,7 @@ function NavBar() {
               Login
             </button>
             <button className="relative inline-block">
-              <FaShoppingCart className="text-2xl" />
+              <FaShoppingCart className="text-2xl  hover:text-textMain-mirage" />
             </button>
           </div>
         </div>
